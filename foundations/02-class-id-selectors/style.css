@@ -1,0 +1,21 @@
+.odd-num {
+  background-color: #ffbc61;
+  font-family: 'Verdana', 'DejaVu Sans', 'sans-serif';
+  /* font-size: 24px; */
+}
+
+#for-sake {
+  color: #0000ff;
+  font-size: 36px;
+}
+
+#for-real {
+  background-color: #90ee90;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nos {
+  /* color: #000; */
+  font-size: 24px;
+}
