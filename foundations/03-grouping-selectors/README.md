@@ -12,7 +12,7 @@ This will help you further practice adding classes and using class selectors, so
 
 ## Desired Outcome
 ![desired outcome](./desired-outcome.png)
-
+ 
 
 ### Self Check
 - Does each element have a unique class name?
