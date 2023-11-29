@@ -2,28 +2,89 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
+
+/* header section */
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  /* used solution here (removed the flex-direction property) */
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px;
 }
 
+
+/* main section */
+.main {
+  flex: 1;
+  display: flex;
+  /* used solution here(Removed the jusifycontent and gap properties) */
+}
+
+/* sidebar area */
+.sidebar {
+  /* U.S.H(changed flex: 1; to flex-shrink: 0;) */
+  flex-shrink: 0;
+  max-width: 300px;
+  background: royalblue;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+ul {
+  /* U.S.H(removed some properties and added padding and margin) */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+} 
+
+/* U.S.H(seperated thee li and a elemet and gave li a margin prop) */
+li {
+  margin-bottom: 16px;
+} 
+
+a{
+  text-decoration: none;
+  font-size: 24px;
+  color: white;
+}
+
+/* card area */
+.card-container {
+  /* U.S.H(removed flex, flex-direction, jsutfiy and gap props and increased padding to 32px) */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+.card {
+  /* U.S.H(changed width from 305 to 300px, increasd padding to 16px and added margin) */
+  width: 300px;
+  border: 1px solid #eee;
+  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
+  border-radius: 4px;
+  margin: 16px;
+  padding: 10px;
+}
+
+
+/* footer section */
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sidebar {
-  width: 300px;
-  background: royalblue;
-  box-sizing: border-box;
-}
 
-.card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  border-radius: 4px;
-}
+
+/* althought my approach to solviing this exercise gave almost the same result of that of the solution, all corrections made was only to follow the solution of the lesson. */
