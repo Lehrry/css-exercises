@@ -5,6 +5,27 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+/* header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+}
+
+.left-links. .right
+
+/* removing listing style and underline from links */
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
 }
 
 img {
